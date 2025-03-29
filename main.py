@@ -79,6 +79,9 @@ def generate_and_save_passwords():
                     password = generate_password(length, special_chars)
                 passwords.add(password)
                 f.write(password + "\n")
+    messagebox.showinfo("Erfolgreich", f"Es wurden {num_files} Dateien "
+                                       f"erstellt mit jeweils {passes_per_file} "
+                                       f"Passwörtern mit der Länge {length} unter {file_path} erstellt")
 
 generate_button = Button(frame_02,
                          text="GENERATE FILES",
