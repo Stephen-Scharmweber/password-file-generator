@@ -1,40 +1,48 @@
-# Password Generator
+# Password Generator / Passwort-Generator
 
-A simple GUI-based password generator application built with Python and Tkinter. This tool allows you to generate large quantities of unique random passwords and save them to text files.
+`A simple GUI-based password generator built with Python and Tkinter. Generates bulk passwords with custom rules. / 
+Ein einfacher Passwort-Generator mit Python und Tkinter. Erstellt Massen-Passwörter mit individuellen Regeln.`
 
-## Features
+## Features / Funktionen
 
-- Generate customizable length passwords
-- Specify special characters to include
-- Create multiple password files at once
-- Set the number of passwords per file
-- Choose output directory and filename prefix
-- Ensures all generated passwords are unique
+- Custom length (6-64 chars) / Länge anpassbar (6-64 Zeichen)
+- Special characters support / Sonderzeichen unterstützt
+- Bulk file generation / Massen-Erstellung von Dateien
+- Unique passwords guarantee / Garantiert einmalige Passwörter
+- Custom save location / Anpassbarer Speicherort
 
-## Requirements
+## Requirements / Voraussetzungen
 
 - Python 3.x
-- Tkinter (usually comes with Python)
+- Tkinter (usually included) / Tkinter (meist vorinstalliert)
 
-## Usage
+`1. Run script / Skript starten:
+   python password_generator.py
 
-1. Run the script: `python password_generator.py`
-2. Fill in the parameters:
-   - **LENGTH**: Password length (default: 9)
-   - **PASSES / FILE**: Number of passwords per file (default: 10,000)
-   - **PASSES FILES**: Number of files to generate (default: 1)
-   - **SPECIAL CHARS**: Special characters to include (default: `!§$%&/()=?+*#-_.:,;<>+-`)
-   - **FILENAMES**: Base filename (default: "passwords")
-   - **SAVE PATH**: Directory to save files (default: `C:/Temp/`)
-3. Click "GENERATE FILES" button
+2. Configure settings / Einstellungen vornehmen:
+   - LENGTH: 12 (default) / Standard: 12
+   - PASSES/FILE: 10000 / Passwörter pro Datei
+   - FILES: 1 / Anzahl Dateien
+   - SPECIAL CHARS: !@#$% / Sonderzeichen
+   - SAVE PATH: C:/Temp/ / Speicherort
 
-## Output
+3. Click "GENERATE FILES" / "DATEIEN ERSTELLEN"`
 
-The program will generate text files with the specified number of unique passwords each. Files will be named with your chosen prefix followed by a number (e.g., `passwords_1.txt`, `passwords_2.txt`, etc.).
+## Output / Ausgabe
 
-## Customization
+`Text files with passwords (e.g. passwords_1.txt) / 
+Textdateien mit Passwörtern (z.B. passwords_1.txt)`
 
-You can easily modify the default values in the code by changing the `.insert()` methods for each Entry widget.
+## Customization / Anpassung
+
+`Modify defaults in code / Standardwerte im Code ändern:
+length_entry.insert(0, "12")  # Default length
+special_chars_entry.insert(0, "!@#$%")  # Symbols`
+
+## License / Lizenz
+
+`MIT License - Free to use and modify / 
+Freie Nutzung und Modifikation erlaubt`
 
 ## License
 
